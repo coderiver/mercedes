@@ -1,12 +1,16 @@
 $gray: #666
 $blue: #00adef
+$blue_d: #036
 body
 	padding: 0 10px 
 	min-width: 1000px
 	font-size: 11px 
 	font-family: Arial, sans-serif 
 	line-height: 1.45
+	color: $gray 
 	+background-image(linear-gradient(#262729,#e1e4e7))
+	+selection
+		background: #b8e2ff
 a
 	text-decoration: none
 .wrap
@@ -67,6 +71,8 @@ a
 		&:hover,
 		&.is-active
 			color: $blue
+.main
+	background: #fff 
 .footer
 	position: relative
 	padding: 22px 0 25px
@@ -94,7 +100,6 @@ a
 		&:first-child
 			&:before
 				display: none
-			
-	.is-important
-		color: #0f3f6f
-		text-transform: uppercase 
+		&:hover,
+		&.is-active
+			color: #0f3f6f 
