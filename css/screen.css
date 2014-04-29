@@ -19,7 +19,86 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; }
+body { padding: 0 10px; min-width: 1000px; font-size: 11px; font-family: Arial, sans-serif; line-height: 1.45; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #262729), color-stop(100%, #e1e4e7)); background-image: -webkit-linear-gradient(#262729, #e1e4e7); background-image: -moz-linear-gradient(#262729, #e1e4e7); background-image: -o-linear-gradient(#262729, #e1e4e7); background-image: linear-gradient(#262729, #e1e4e7); }
+
+a { text-decoration: none; }
+
+.wrap { *zoom: 1; }
+.wrap:after { content: " "; display: table; clear: both; }
+
+.wrapper { overflow: hidden; }
+
+.out { margin: 0 auto -62px; width: 978px; position: relative; min-height: 100%; height: auto !important; height: 100%; }
+
+.push { height: 62px; }
+
+.header { padding: 25px 0 0; *zoom: 1; color: white; }
+.header:after { content: " "; display: table; clear: both; }
+
+.header__logo { margin: 0 0 15px; float: left; background: url('../img/icons-s54b8e3a236.png') 0 0 no-repeat; width: 215px; height: 48px; font: 0/0 a; text-shadow: none; color: transparent; }
+
+.header__nav { float: left; margin-top: 23px; font-size: 0; }
+.header__nav a { display: inline-block; margin-left: 26px; color: white; font-size: 11px; text-decoration: none; }
+.header__nav a:hover, .header__nav a.is-active { color: #00adef; }
+
+.header__tel { float: right; margin-top: 3px; }
+.header__tel span { display: block; font-size: 14px; }
+
+.header__subnav { border-top: 1px solid #4b4b4b; padding: 14px 0 15px; clear: both; font-size: 0; text-align: center; }
+.header__subnav a { display: inline-block; color: #9e9e9f; font-size: 11px; margin-left: 22px; }
+.header__subnav a:first-child { margin-left: 0; }
+.header__subnav a:hover, .header__subnav a.is-active { color: #00adef; }
+
+.footer { position: relative; padding: 22px 0 25px; z-index: 2; margin: 0 auto; width: 978px; *zoom: 1; color: #6b6b6c; }
+.footer:after { content: " "; display: table; clear: both; }
+
+.footer__copy { float: left; }
+
+.footer__nav { float: right; font-size: 0; }
+.footer__nav a { display: inline-block; position: relative; margin-left: 28px; font-size: 11px; color: #6b6b6c; }
+.footer__nav a:before { content: "|"; position: absolute; top: 0; left: -14px; }
+.footer__nav a:first-child:before { display: none; }
+.footer__nav .is-important { color: #0f3f6f; text-transform: uppercase; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="submit"], button { cursor: pointer; }
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="submit"], button { cursor: pointer; }
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
