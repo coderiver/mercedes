@@ -15,3 +15,66 @@
             width: 3px
             height: 3px
             background: #a8a8a8    
+.breadcrumbs
+    margin-bottom: 16px
+    a
+        display: inline-block
+        position: relative
+        margin-right: 19px 
+        color: #9e9e9f 
+        &:after
+            content: ""
+            position: absolute
+            right: -14px
+            top: 5px
+            +s(arr2-blue) 
+.img
+    img
+        max-width: 100%
+        height: auto
+.h1
+    margin: 32px 24px
+    font: normal 24px/1 "Georgia",Arial,sans-serif 
+.items-wrap
+    font-size: 0
+.item
+    display: inline-block
+    width: 212px
+    margin: 0 0 24px 24px 
+    vertical-align: top
+    overflow: hidden
+.item__title
+    position: relative
+    display: block
+    margin-bottom: 8px
+    padding: 7px 19px 
+    font-weight: bold
+    color: $blue_d 
+    font-size: 11px
+    background: #eef0f2 
+    +tr(all .2s linear)
+    &:before
+        content: ""
+        position: absolute
+        left: 7px
+        top: 50%
+        margin-top: -3px
+        +s(arr2)
+        +tr(all .2s linear)
+    &:hover
+        background: #80c8e3 
+        color: #fff
+        &:before 
+            +s(arr1-w)
+.item__img
+    display: block
+    margin-bottom: 11px  
+    width: 212px
+    height: 59px 
+    img
+        max-width: 100%
+        height: auto
+        max-width: 100%
+.item__descr
+    font-size: 12px
+    
