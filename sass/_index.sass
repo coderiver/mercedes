@@ -66,3 +66,61 @@
                 display: none
     .is-active
         background: #00adef 
+        
+.range-cars
+    position: relative
+    z-index: 400
+    float: left
+    margin: -43px 0 0 20px
+    position: relative
+    height: 132px
+    img
+        display: block
+.range-cars__link
+    position: relative
+    display: block
+    padding: 0 12px 0 14px
+    background: #fff 
+    height: 34px
+    color: #8c8c8c 
+    font: normal 12px/34px "Georgia",Arial,sans-serif 
+    +background-image(linear-gradient(bottom, rgba(0,0,0,.15) 1%, rgba(255,255,255,.15) 99%))
+    &:after
+        content: ""
+        position: absolute
+        top: 50%
+        right: 12px
+        margin-top: -9px
+        +s(arr-btn) 
+.range-cars__list
+    position: absolute
+    bottom: 34px
+    left: 0
+    right: 0
+    visibility: hidden
+    
+    &.is-active
+        visibility: visible
+        a
+            height: 75px
+            +opacity(1)
+    a
+        display: block
+        padding: 18px 8px 0 10px 
+        height: 0
+        overflow: hidden
+        +box
+        +g(#fff,#d9dadc)
+        font-size: 12px
+        color: $blue_d 
+        +opacity(0)
+        white-space: nowrap
+        +tr(all .2s linear) 
+    span,img
+        display: inline-block
+        line-height: 1.2
+        vertical-align: top
+    span
+        margin-right: 7px
+        width: 85px
+        white-space: normal

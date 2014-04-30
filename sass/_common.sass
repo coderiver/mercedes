@@ -51,6 +51,7 @@ a
 		color: #fff
 		font-size: 11px
 		text-decoration: none 
+		+tr(color .2s linear)
 		&:hover,
 		&.is-active
 			color: $blue  
@@ -71,6 +72,7 @@ a
 		color: #9e9e9f 
 		font-size: 11px
 		margin-left: 22px
+		+tr(color .2s linear)
 		&:first-child
 			margin-left: 0
 		&:hover,
@@ -97,6 +99,7 @@ a
 		margin-left: 28px
 		font-size: 11px
 		color: #6b6b6c 
+		+tr(color .2s linear)
 		&:before
 			content: "|"
 			position: absolute
@@ -108,3 +111,64 @@ a
 		&:hover,
 		&.is-active
 			color: #0f3f6f 
+
+.nav
+	padding: 20px 0 26px 
+	+clr
+	+background-image(linear-gradient(bottom, #222327 -25%, #4f5254 125%))
+
+.nav__item
+	float: left
+	width: 130px
+	margin-left: 20px
+.nav__img
+	display: block
+	margin-bottom: 10px
+	height: 66px
+	overflow: hidden
+	position: relative
+	img
+		max-width: 100%
+		max-height: 100%
+		height: auto   
+		vertical-align: middle
+		+box-shadow(0 1px 1px rgba(0,0,0,.38))
+	&:hover
+		.nav__text	
+			visibility: visible
+			top: 0
+			+opacity(1)
+		
+.nav__link
+	position: relative
+	padding-left: 13px
+	color: #b4b4b4 
+	+tr(all .2s linear)
+	&:hover
+		color: #fff
+		&:before
+			+sp(arr1-w)
+	&:before
+		content: ""
+		position: absolute
+		top: 4px
+		left: 0
+		+s(arr1)
+.nav__text	
+	position: absolute
+	top: 66px
+	right: 0
+	left: 0
+	bottom: 0
+	padding: 0 11px 
+	line-height: 66px
+	text-align: left
+	background: rgba(#fff, .85) 
+	visibility: hidden
+	+opacity(0)
+	+tr(all .2s linear)
+	span
+		display: inline-block
+		vertical-align: middle
+		line-height: 1.3
+		color: #5b5b5b 
