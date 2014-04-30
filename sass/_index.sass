@@ -18,3 +18,51 @@
             color: $blue 
             &:before
                 +sp(arr2-blue)
+.contacts
+    p
+        margin-bottom: 17px
+    a
+        color: $blue   
+.contacts__title
+    margin-bottom: 6px
+    font-weight: bold
+    i
+        display: inline-block
+        margin-right: 7px
+.icon-pin
+    +s(pin)
+    vertical-align: middle
+.icon-clock
+    +s(clock)
+.slider
+    overflow: hidden
+.slider__item
+    height: 434px
+    overflow: hidden
+.pager
+    position: absolute
+    bottom: 29px
+    left: 44px
+    z-index: 300
+    button
+        display: inline-block
+        position: relative
+        vertical-align: middle
+        margin-right: 15px
+        width: 12px
+        height: 12px
+        +border-radius(50%)
+        background: #3b3b3b 
+        &:before
+            content: ""
+            position: absolute
+            top: 50%
+            left: -15px
+            width: 15px
+            height: 1px
+            background: #3b3b3b
+        &:first-child
+            &:before
+                display: none
+    .is-active
+        background: #00adef 
