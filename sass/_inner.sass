@@ -35,6 +35,9 @@
 .h1
     margin: 32px 24px
     font: normal 24px/1 "Georgia",Arial,sans-serif 
+.h2
+    margin: 18px 0
+    font: normal 18px/1 "Georgia",Arial,sans-serif 
 .items-wrap
     font-size: 0
 .item
@@ -80,7 +83,7 @@
     
 
 .nav-car
-    
+    margin-bottom: 28px
 .nav-car__item
     display: block   
     +tr(all .2s linear) 
@@ -101,7 +104,7 @@
         vertical-align: top
     span
         margin-right: 7px
-        width: 115px
+        width: 105px
         white-space: normal
 .nav-car__extend
     display: none
@@ -143,3 +146,73 @@
     width: 146px
 .table_col4
     width: 154px
+    
+
+.gallery
+    padding: 10px 
+    margin-bottom: 42px
+    background: #edeff1 
+.gallery__img
+    overflow: hidden
+    height: 406px
+    line-height: 406px
+    text-align: center
+    margin-bottom: 16px
+    img
+        max-width: 100%
+        height: auto
+        vertical-align: middle
+.gallery__bottom
+    +clr
+.gallery__preview
+    +clr
+    float: left
+    width: 355px
+    a
+        float: left
+        margin: 0 14px 14px 0
+        width: 103px
+        height: 60px
+        line-height: 60px
+        +box
+        text-align: center
+        img
+            max-width: 100%
+            max-height: 100%
+            height: auto
+            vertical-align: middle
+    .is-active
+        +box-shadow(0 0 0 1px #059bd4)
+.gallery__price
+    float: right
+    span
+        display: inline-block
+        vertical-align: middle
+        margin-right: 17px
+    .price
+        vertical-align: middle
+        
+.table-simple
+    tr
+        &:nth-child(2n+1)
+            background: #eef0f2 
+    td
+        padding: 7px 30px   
+        border-bottom: 0
+        vertical-align: middle
+        border-left: 3px solid #fff 
+        width: 50%
+        &:first-child
+            font-weight: bold
+            padding: 5px 30px 
+            border-left: 0
+.post
+    overflow: hidden
+.post__title
+    display: inline-block
+    margin-bottom: 5px
+    font-size: 12px
+    font-weight: bold
+    color: #666 
+.post__descr
+    margin: 8px 0 10px
