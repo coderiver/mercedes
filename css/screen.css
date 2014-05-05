@@ -90,6 +90,8 @@ a { text-decoration: none; }
 .link-more:hover { color: #00adef; }
 .link-more:hover:before { background: url('../img/icons-s01c95b3139.png') 0 -161px no-repeat; width: 4px; height: 6px; }
 
+.no-gradient .out { background: #e1e4e6 url(../img/body-bg.png) 0 0 repeat-x; }
+
 .about { padding: 35px 20px 10px; background: white; }
 
 .spec-offer { margin: 6px 0 32px; }
@@ -128,7 +130,7 @@ a { text-decoration: none; }
 .range-cars__link { position: relative; display: block; padding: 0 12px 0 14px; background: white; height: 34px; color: #8c8c8c; font: normal 12px/34px "Georgia", Arial, sans-serif; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(1%, rgba(0, 0, 0, 0.15)), color-stop(99%, rgba(255, 255, 255, 0.15))); background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.15) 1%, rgba(255, 255, 255, 0.15) 99%); background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.15) 1%, rgba(255, 255, 255, 0.15) 99%); background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.15) 1%, rgba(255, 255, 255, 0.15) 99%); background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.15) 1%, rgba(255, 255, 255, 0.15) 99%); }
 .range-cars__link:after { content: ""; position: absolute; top: 50%; right: 12px; margin-top: -9px; background: url('../img/icons-s01c95b3139.png') 0 -134px no-repeat; width: 16px; height: 17px; }
 
-.cars-list a { display: block; padding: 18px 8px 0 10px; height: 75px; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d9dadc)); background-image: -webkit-linear-gradient(#ffffff, #d9dadc); background-image: -moz-linear-gradient(#ffffff, #d9dadc); background-image: -o-linear-gradient(#ffffff, #d9dadc); background-image: linear-gradient(#ffffff, #d9dadc); font-size: 12px; color: #003366; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; white-space: nowrap; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.cars-list a { display: block; padding: 18px 8px 0 10px; height: 75px; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #d9dadc; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d9dadc)); background-image: -webkit-linear-gradient(#ffffff, #d9dadc); background-image: -moz-linear-gradient(#ffffff, #d9dadc); background-image: -o-linear-gradient(#ffffff, #d9dadc); background-image: linear-gradient(#ffffff, #d9dadc); font-size: 12px; color: #003366; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; white-space: nowrap; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .cars-list span, .cars-list img { display: inline-block; line-height: 1.2; vertical-align: top; }
 .cars-list span { margin-right: 7px; width: 85px; white-space: normal; }
 
@@ -150,6 +152,7 @@ a { text-decoration: none; }
 .article blockquote strong { font-style: normal; color: #666666; }
 .article blockquote p { margin-bottom: 0; }
 .article a { color: #114170; }
+.article a:hover { text-decoration: underline; }
 .article img { float: left; margin-right: 22px; }
 
 .article_content { padding-bottom: 30px; font-size: 12px; }
@@ -186,11 +189,11 @@ a { text-decoration: none; }
 .nav-car { margin-bottom: 28px; }
 
 .nav-car__item { display: block; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
-.nav-car__item > a { display: block; padding: 18px 8px 0 16px; height: 75px; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: #003366; white-space: nowrap; font-size: 10px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eff1f2)); background-image: -webkit-linear-gradient(#ffffff, #eff1f2); background-image: -moz-linear-gradient(#ffffff, #eff1f2); background-image: -o-linear-gradient(#ffffff, #eff1f2); background-image: linear-gradient(#ffffff, #eff1f2); text-transform: uppercase; }
+.nav-car__item > a { display: block; padding: 18px 8px 0 16px; height: 75px; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: #003366; white-space: nowrap; font-size: 10px; background: #eff1f2; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eff1f2)); background-image: -webkit-linear-gradient(#ffffff, #eff1f2); background-image: -moz-linear-gradient(#ffffff, #eff1f2); background-image: -o-linear-gradient(#ffffff, #eff1f2); background-image: linear-gradient(#ffffff, #eff1f2); text-transform: uppercase; }
 .nav-car__item span, .nav-car__item img { display: inline-block; line-height: 1.2; vertical-align: top; }
 .nav-car__item span { margin-right: 7px; width: 105px; white-space: normal; }
 
-.nav-car__extend { display: none; border-top: 1px solid white; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eff1f2), color-stop(100%, #edeff1)); background-image: -webkit-linear-gradient(#eff1f2, #edeff1); background-image: -moz-linear-gradient(#eff1f2, #edeff1); background-image: -o-linear-gradient(#eff1f2, #edeff1); background-image: linear-gradient(#eff1f2, #edeff1); }
+.nav-car__extend { display: none; border-top: 1px solid white; background: #eff1f2; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eff1f2), color-stop(100%, #edeff1)); background-image: -webkit-linear-gradient(#eff1f2, #edeff1); background-image: -moz-linear-gradient(#eff1f2, #edeff1); background-image: -o-linear-gradient(#eff1f2, #edeff1); background-image: linear-gradient(#eff1f2, #edeff1); }
 .nav-car__extend a { display: block; border-bottom: 1px solid #d3d5d8; padding: 10px 16px; color: #666666; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .nav-car__extend a:hover { color: #00adef; }
 .nav-car__extend a.is-active { color: #059bd4; font-weight: bold; }
