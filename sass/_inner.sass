@@ -78,3 +78,68 @@
 .item__descr
     font-size: 12px
     
+
+.nav-car
+    
+.nav-car__item
+    display: block   
+    +tr(all .2s linear) 
+    > a
+        display: block
+        padding: 18px 8px 0 16px
+        height: 75px 
+        overflow: hidden
+        +box
+        color: $blue_d 
+        white-space: nowrap
+        font-size: 10px
+        +g(#fff,#eff1f2) 
+        text-transform: uppercase
+    span,img
+        display: inline-block
+        line-height: 1.2
+        vertical-align: top
+    span
+        margin-right: 7px
+        width: 115px
+        white-space: normal
+.nav-car__extend
+    display: none
+    border-top: 1px solid #fff 
+    +g(#eff1f2,#edeff1)
+    a
+        display: block
+        border-bottom: 1px solid #d3d5d8 
+        padding: 10px 16px 
+        color: $gray
+        +tr(all .2s linear) 
+        &:hover
+            color: $blue
+        &.is-active
+            color: #059bd4
+            font-weight: bold
+            
+.table
+    th
+        padding: 15px 0 13px 17px
+        text-align: left
+        vertical-align: top
+        border-bottom: 2px solid #6e6e6e
+    td
+        padding: 25px 0 25px 17px
+        border-bottom: 1px solid #d5d7da 
+        vertical-align: top
+        &:first-child
+            padding-left: 0
+    tr
+        &:nth-child(2n)
+            td
+                background: #eef0f2 
+.table_col1
+    padding-left: 8px
+.table_col2
+    width: 83px
+.table_col3
+    width: 146px
+.table_col4
+    width: 154px
