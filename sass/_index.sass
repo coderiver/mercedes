@@ -38,13 +38,23 @@
 .slider
     overflow: hidden
 .slider__item
+    position: relative
     height: 434px
     overflow: hidden
+.slider__link
+    position: absolute
+    left: 45px
+    bottom: 60px
+    color: #fff
+    font-size: 14px
+    text-decoration: underline
+    &:hover
+        text-decoration: none
 .pager
     position: absolute
     bottom: 29px
     left: 44px
-    z-index: 300
+    z-index: 300  
     button
         display: inline-block
         position: relative
@@ -77,6 +87,12 @@
     height: 132px
     img
         display: block
+    &:hover
+        .cars-list
+            visibility: visible
+            a
+                height: 75px
+                +opacity(1)
     .cars-list
         visibility: hidden
         position: absolute

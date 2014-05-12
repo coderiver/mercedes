@@ -93,6 +93,14 @@
     margin: 0 0 24px 24px 
     vertical-align: top
     overflow: hidden
+.item__link
+    display: block
+    &:hover
+        .item__title
+            background: #80c8e3 
+            color: #fff
+            &:before 
+                +s(arr1-w)
 .item__title
     position: relative
     display: block
@@ -112,10 +120,7 @@
         +s(arr2)
         +tr(all .2s linear)
     &:hover
-        background: #80c8e3 
-        color: #fff
-        &:before 
-            +s(arr1-w)
+        
 .item__img
     display: block
     margin-bottom: 11px  
@@ -240,7 +245,8 @@
         margin-right: 17px
     .price
         vertical-align: middle
-        
+    .btn
+        margin-right: 20px
 .table-simple
     tr
         &:nth-child(2n+1)
