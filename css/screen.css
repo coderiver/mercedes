@@ -149,11 +149,12 @@ a { text-decoration: none; }
 .article ul li:before { content: ""; position: absolute; left: 6px; top: 5px; width: 3px; height: 3px; background: #a8a8a8; }
 .article ol { padding-left: 20px; list-style-type: decimal; }
 .article ol li { margin-bottom: 8px; }
-.article h2 { font-size: 18px; }
-.article h3 { font-size: 16px; }
-.article h4 { font-size: 15px; }
-.article h5 { font-size: 14px; }
-.article h6 { font-size: 12px; }
+.article h1 { margin: 32px 0 24px; font: normal 24px/1 "Georgia", Arial, sans-serif; }
+.article h2 { margin: 30px 0 22px; font: normal 22px/1 "Georgia", Arial, sans-serif; }
+.article h3 { margin: 28px 0 20px; font: normal 20px/1 "Georgia", Arial, sans-serif; }
+.article h4 { margin: 26px 0 18px; font: normal 18px/1 "Georgia", Arial, sans-serif; }
+.article h5 { margin: 24px 0 16px; font: normal 16px/1 "Georgia", Arial, sans-serif; }
+.article h6 { margin: 22px 0 14px; font: normal 14px/1 "Georgia", Arial, sans-serif; }
 .article table { margin: 20px 0; }
 .article blockquote { margin: 21px 0 23px; padding: 20px; font-style: italic; color: #999999; font-size: 11px; line-height: 1.64; background: #eef0f2; }
 .article blockquote strong { font-style: normal; color: #666666; }
@@ -211,6 +212,8 @@ a { text-decoration: none; }
 .table td { padding: 25px 0 25px 17px; border-bottom: 1px solid #d5d7da; vertical-align: top; }
 .table td:first-child { padding-left: 0; }
 .table tr:nth-child(2n) td { background: #eef0f2; }
+.table a { color: #666666; }
+.table a:hover { color: #00adef; }
 
 .table_col1 { padding-left: 8px; }
 

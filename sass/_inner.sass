@@ -1,319 +1,332 @@
 .article
-    +clr
-    p
-        margin-bottom: 17px
-    ul
-        margin: 17px 0 
-        li
-            position: relative
-            margin-bottom: 11px
-            padding-left: 21px
-            &:before
-                content: ""
-                position: absolute
-                left: 6px
-                top: 5px
-                width: 3px
-                height: 3px
-                background: #a8a8a8    
-    ol
-        padding-left: 20px
-        list-style-type: decimal
-        li
-            margin-bottom: 8px
-    h2
-        font-size: 18px
-    h3
-        font-size: 16px
-    h4
-        font-size: 15px
-    h5
-        font-size: 14px
-    h6
-        font-size: 12px
-    table
-        margin: 20px 0
-    blockquote
-        margin: 21px 0 23px 
-        padding: 20px  
-        font-style: italic
-        color: #999
-        font-size: 11px
-        line-height: 1.64
-        background: #eef0f2  
-        strong
-            font-style: normal
-            color: $gray 
-        p
-            margin-bottom: 0
-    a
-        color: #114170
-        &:hover
-            text-decoration: underline
-    img
-        float: left
-        margin-right: 22px
+	+clr
+	p
+		margin-bottom: 17px
+	ul
+		margin: 17px 0 
+		li
+			position: relative
+			margin-bottom: 11px
+			padding-left: 21px
+			&:before
+				content: ""
+				position: absolute
+				left: 6px
+				top: 5px
+				width: 3px
+				height: 3px
+				background: #a8a8a8    
+	ol
+		padding-left: 20px
+		list-style-type: decimal
+		li
+			margin-bottom: 8px
+	h1
+		margin: 32px 0 24px
+		font: normal 24px/1 "Georgia", Arial, sans-serif
+	h2
+		margin: 30px 0 22px
+		font: normal 22px/1 "Georgia", Arial, sans-serif
+	h3
+		margin: 28px 0 20px
+		font: normal 20px/1 "Georgia", Arial, sans-serif
+	h4
+		margin: 26px 0 18px
+		font: normal 18px/1 "Georgia", Arial, sans-serif
+	h5
+		margin: 24px 0 16px
+		font: normal 16px/1 "Georgia", Arial, sans-serif
+	h6
+		margin: 22px 0 14px
+		font: normal 14px/1 "Georgia", Arial, sans-serif
+
+	table
+		margin: 20px 0
+	blockquote
+		margin: 21px 0 23px 
+		padding: 20px  
+		font-style: italic
+		color: #999
+		font-size: 11px
+		line-height: 1.64
+		background: #eef0f2  
+		strong
+			font-style: normal
+			color: $gray 
+		p
+			margin-bottom: 0
+	a
+		color: #114170
+		&:hover
+			text-decoration: underline
+	img
+		float: left
+		margin-right: 22px
 .article_content
-    padding-bottom: 30px
-    font-size: 12px
+	padding-bottom: 30px
+	font-size: 12px
 .breadcrumbs
-    margin-bottom: 16px
-    a
-        display: inline-block
-        position: relative
-        margin-right: 19px 
-        color: #9e9e9f 
-        &:after
-            content: ""
-            position: absolute
-            right: -14px
-            top: 5px
-            +s(arr2-blue) 
+	margin-bottom: 16px
+	a
+		display: inline-block
+		position: relative
+		margin-right: 19px 
+		color: #9e9e9f 
+		&:after
+			content: ""
+			position: absolute
+			right: -14px
+			top: 5px
+			+s(arr2-blue) 
 .img
-    img
-        max-width: 100%
-        height: auto
+	img
+		max-width: 100%
+		height: auto
 .h1
-    margin: 32px 24px
-    font: normal 24px/1 "Georgia",Arial,sans-serif 
+	margin: 32px 24px
+	font: normal 24px/1 "Georgia",Arial,sans-serif 
 .h1_mod
-    margin: 32px 0 
+	margin: 32px 0 
 .h2
-    margin: 18px 0
-    font: normal 18px/1 "Georgia",Arial,sans-serif 
+	margin: 18px 0
+	font: normal 18px/1 "Georgia",Arial,sans-serif 
 .items-wrap
-    font-size: 0
+	font-size: 0
 .items-wrap_mod
-    margin: 21px -40px 40px 0
-    .item
-        margin: 0 35px 0 0
+	margin: 21px -40px 40px 0
+	.item
+		margin: 0 35px 0 0
 .item
-    display: inline-block
-    width: 212px
-    margin: 0 0 24px 24px 
-    vertical-align: top
-    overflow: hidden
+	display: inline-block
+	width: 212px
+	margin: 0 0 24px 24px 
+	vertical-align: top
+	overflow: hidden
 .item__link
-    display: block
-    &:hover
-        .item__title
-            background: #80c8e3 
-            color: #fff
-            &:before 
-                +s(arr1-w)
+	display: block
+	&:hover
+		.item__title
+			background: #80c8e3 
+			color: #fff
+			&:before 
+				+s(arr1-w)
 .item__title
-    position: relative
-    display: block
-    margin-bottom: 8px
-    padding: 7px 19px 
-    font-weight: bold
-    color: $blue_d 
-    font-size: 11px
-    background: #eef0f2 
-    +tr(all .2s linear)
-    &:before
-        content: ""
-        position: absolute
-        left: 7px
-        top: 50%
-        margin-top: -3px
-        +s(arr2)
-        +tr(all .2s linear)
-    &:hover
-        
+	position: relative
+	display: block
+	margin-bottom: 8px
+	padding: 7px 19px 
+	font-weight: bold
+	color: $blue_d 
+	font-size: 11px
+	background: #eef0f2 
+	+tr(all .2s linear)
+	&:before
+		content: ""
+		position: absolute
+		left: 7px
+		top: 50%
+		margin-top: -3px
+		+s(arr2)
+		+tr(all .2s linear)
+	&:hover
+		
 .item__img
-    display: block
-    margin-bottom: 11px  
-    width: 212px
-    height: 59px 
-    img
-        max-width: 100%
-        height: auto
-        max-width: 100%
+	display: block
+	margin-bottom: 11px  
+	width: 212px
+	height: 59px 
+	img
+		max-width: 100%
+		height: auto
+		max-width: 100%
 .item__descr
-    font-size: 12px
-    
+	font-size: 12px
+	
 
 .nav-car
-    margin-bottom: 28px
+	margin-bottom: 28px
 .nav-car__item
-    display: block   
-    +tr(all .2s linear) 
-    > a
-        display: block
-        padding: 18px 8px 0 16px
-        height: 75px 
-        overflow: hidden
-        +box
-        color: $blue_d 
-        white-space: nowrap
-        font-size: 10px
-        background: #eff1f2
-        +g(#fff,#eff1f2) 
-        text-transform: uppercase
-    span,img
-        display: inline-block
-        line-height: 1.2
-        vertical-align: top
-    span
-        margin-right: 7px
-        width: 105px
-        white-space: normal
+	display: block   
+	+tr(all .2s linear) 
+	> a
+		display: block
+		padding: 18px 8px 0 16px
+		height: 75px 
+		overflow: hidden
+		+box
+		color: $blue_d 
+		white-space: nowrap
+		font-size: 10px
+		background: #eff1f2
+		+g(#fff,#eff1f2) 
+		text-transform: uppercase
+	span,img
+		display: inline-block
+		line-height: 1.2
+		vertical-align: top
+	span
+		margin-right: 7px
+		width: 105px
+		white-space: normal
 .nav-car__extend
-    display: none
-    border-top: 1px solid #fff 
-    background: #eff1f2
-    +g(#eff1f2,#edeff1)
-    a
-        display: block
-        border-bottom: 1px solid #d3d5d8 
-        padding: 10px 16px 
-        color: $gray
-        +tr(all .2s linear) 
-        &:hover
-            color: $blue
-        &.is-active
-            color: #059bd4
-            font-weight: bold
-            
+	display: none
+	border-top: 1px solid #fff 
+	background: #eff1f2
+	+g(#eff1f2,#edeff1)
+	a
+		display: block
+		border-bottom: 1px solid #d3d5d8 
+		padding: 10px 16px 
+		color: $gray
+		+tr(all .2s linear) 
+		&:hover
+			color: $blue
+		&.is-active
+			color: #059bd4
+			font-weight: bold
+			
 .table
-    th
-        padding: 15px 0 13px 17px
-        text-align: left
-        vertical-align: top
-        border-bottom: 2px solid #6e6e6e
-    td
-        padding: 25px 0 25px 17px
-        border-bottom: 1px solid #d5d7da 
-        vertical-align: top
-        &:first-child
-            padding-left: 0
-    tr
-        &:nth-child(2n)
-            td
-                background: #eef0f2 
+	th
+		padding: 15px 0 13px 17px
+		text-align: left
+		vertical-align: top
+		border-bottom: 2px solid #6e6e6e
+	td
+		padding: 25px 0 25px 17px
+		border-bottom: 1px solid #d5d7da 
+		vertical-align: top
+		&:first-child
+			padding-left: 0
+	tr
+		&:nth-child(2n)
+			td
+				background: #eef0f2 
+	a
+		color: #666
+		&:hover
+			color: $blue 
 .table_col1
-    padding-left: 8px
+	padding-left: 8px
 .table_col2
-    width: 83px
+	width: 83px
 .table_col3
-    width: 146px
+	width: 146px
 .table_col4
-    width: 154px
-    
+	width: 154px
+	
 
 .gallery
-    padding: 10px 
-    margin-bottom: 42px
-    background: #edeff1 
+	padding: 10px 
+	margin-bottom: 42px
+	background: #edeff1 
 .gallery__img
-    overflow: hidden
-    height: 406px
-    line-height: 406px
-    text-align: center
-    margin-bottom: 16px
-    img
-        max-width: 100%
-        height: auto
-        vertical-align: middle
+	overflow: hidden
+	height: 406px
+	line-height: 406px
+	text-align: center
+	margin-bottom: 16px
+	img
+		max-width: 100%
+		height: auto
+		vertical-align: middle
 .gallery__bottom
-    +clr
+	+clr
 .gallery__preview
-    +clr
-    float: left
-    width: 355px
-    a
-        float: left
-        margin: 0 14px 14px 0
-        width: 103px
-        height: 60px
-        line-height: 60px
-        +box
-        text-align: center
-        img
-            max-width: 100%
-            max-height: 100%
-            height: auto
-            vertical-align: middle
-    .is-active
-        +box-shadow(0 0 0 1px #059bd4)
+	+clr
+	float: left
+	width: 355px
+	a
+		float: left
+		margin: 0 14px 14px 0
+		width: 103px
+		height: 60px
+		line-height: 60px
+		+box
+		text-align: center
+		img
+			max-width: 100%
+			max-height: 100%
+			height: auto
+			vertical-align: middle
+	.is-active
+		+box-shadow(0 0 0 1px #059bd4)
 .gallery__price
-    float: right
-    span
-        display: inline-block
-        vertical-align: middle
-        margin-right: 17px
-    .price
-        vertical-align: middle
-    .btn
-        margin-right: 20px
+	float: right
+	span
+		display: inline-block
+		vertical-align: middle
+		margin-right: 17px
+	.price
+		vertical-align: middle
+	.btn
+		margin-right: 20px
 .table-simple
-    tr
-        &:nth-child(2n+1)
-            td
-                background: #eef0f2 
-    th
-        padding: 5px 13px
-        text-align: left
-        vertical-align: top
-        border-bottom: 2px solid #6e6e6e
-    td
-        padding: 7px 30px   
-        border-bottom: 0
-        vertical-align: middle
-        border-left: 3px solid #fff 
-        width: 50%
-        &:first-child
-            font-weight: bold
-            padding: 5px 30px 
-            border-left: 0
+	tr
+		&:nth-child(2n+1)
+			td
+				background: #eef0f2 
+	th
+		padding: 5px 13px
+		text-align: left
+		vertical-align: top
+		border-bottom: 2px solid #6e6e6e
+	td
+		padding: 7px 30px   
+		border-bottom: 0
+		vertical-align: middle
+		border-left: 3px solid #fff 
+		width: 50%
+		&:first-child
+			font-weight: bold
+			padding: 5px 30px 
+			border-left: 0
 .table-simple_four-row
-    td
-        width: 25%
-        padding: 5px 13px
-        &:first-child   
-            padding-left: 13px
+	td
+		width: 25%
+		padding: 5px 13px
+		&:first-child   
+			padding-left: 13px
 .post
-    overflow: hidden
+	overflow: hidden
 .post__title
-    display: inline-block
-    margin-bottom: 5px
-    font-size: 12px
-    font-weight: bold
-    color: #666 
+	display: inline-block
+	margin-bottom: 5px
+	font-size: 12px
+	font-weight: bold
+	color: #666 
 .post__descr
-    margin: 8px 0 10px
+	margin: 8px 0 10px
 .aside
-    a
-        display: block
-        border-bottom: 1px solid #d3d5d8
-        padding: 10px 18px 
-        background: #edeff1  
-        color: $gray
-        +tr(all .2s linear)
-        &:hover
-            background: #79c5e2
-            color: #fff  
-            border-color: #79c5e2
-            +box-shadow(0 -1px 0 #79c5e2) 
-        &.is-active
-            font-weight: bold
-            color: $blue
-            &:hover
-                background: #edeff1
-                border-color: #d3d5d8
-                +box-shadow(none) 
+	a
+		display: block
+		border-bottom: 1px solid #d3d5d8
+		padding: 10px 18px 
+		background: #edeff1  
+		color: $gray
+		+tr(all .2s linear)
+		&:hover
+			background: #79c5e2
+			color: #fff  
+			border-color: #79c5e2
+			+box-shadow(0 -1px 0 #79c5e2) 
+		&.is-active
+			font-weight: bold
+			color: $blue
+			&:hover
+				background: #edeff1
+				border-color: #d3d5d8
+				+box-shadow(none) 
 .note
-    position: relative
-    margin: 18px 0 24px
-    border-top: 1px solid #c7c7c7 
-    padding: 18px 145px 0 20px
-    color: #828282
-    font-size: 11px
-    font-style: italic
-    &:before
-        content: "*"
-        position: absolute
-        top: 20px
-        left: 0 
-        color: #ea2e2e 
+	position: relative
+	margin: 18px 0 24px
+	border-top: 1px solid #c7c7c7 
+	padding: 18px 145px 0 20px
+	color: #828282
+	font-size: 11px
+	font-style: italic
+	&:before
+		content: "*"
+		position: absolute
+		top: 20px
+		left: 0 
+		color: #ea2e2e 
